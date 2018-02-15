@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardElevation">5dp</dimen>
+    <dimen name="imageHeight">200dp</dimen>
+    <dimen name="txtSize">14sp</dimen>
+    <dimen name="txtHeaderSize">16sp</dimen>
+    <dimen name="txtBoxHeight">40dp</dimen>
+    <dimen name="txtBoxWidth">200dp</dimen>
+    <dimen name="btnHeight">200dp</dimen>
+
+</resources>

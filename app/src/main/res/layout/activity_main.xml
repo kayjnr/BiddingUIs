@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context="com.exsimsoft.biddingui.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardOne"
+                app:cardElevation="@dimen/cardElevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/imageHeight"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ps4"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/itemTitle"
+                        android:padding="5dp"
+                        android:textSize="@dimen/txtSize"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblDescription"
+                android:text="Item Description"
+                android:layout_below="@+id/cardOne"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtHeaderSize"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardTwo"
+                app:cardElevation="5dp"
+                android:layout_below="@+id/lblDescription">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:textSize="@dimen/txtSize"
+                    android:padding="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing elit ut aliquam purus sit. Integer enim neque volutpat ac tincidunt vitae. Sodales neque sodales ut etiam sit amet. Urna duis convallis convallis tellus id interdum velit laoreet"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblBidding"
+                android:text="Bidding"
+                android:layout_below="@+id/cardTwo"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/txtHeaderSize"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardThree"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/lblBidding">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblTime"
+                        android:text="Time left"
+                        android:textSize="@dimen/txtSize"
+                        android:padding="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblBids"
+                        android:layout_below="@+id/lblTime"
+                        android:text="Bids"
+                        android:textSize="@dimen/txtSize"
+                        android:padding="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblBidders"
+                        android:layout_below="@+id/lblBids"
+                        android:text="Bidders"
+                        android:textSize="@dimen/txtSize"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTime"
+                        android:text="2d 13hrs"
+                        android:padding="5dp"
+                        android:textSize="@dimen/txtSize"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/lblTime"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtBids"
+                        android:text="10"
+                        android:padding="5dp"
+                        android:textSize="@dimen/txtSize"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/lblTime"
+                        android:layout_below="@+id/lblTime"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtBidders"
+                        android:text="15"
+                        android:padding="5dp"
+                        android:textSize="@dimen/txtSize"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/lblTime"
+                        android:layout_below="@+id/lblBids"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeBidFab"
+        app:fabSize="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_gavel_white_24dp"/>
+</RelativeLayout>
